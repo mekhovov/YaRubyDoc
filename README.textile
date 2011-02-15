@@ -1,0 +1,23 @@
+h1. YaRubyDoc: Yet Another Ruby Documentation
+
+Yet Another Ruby Documentation. With tree-like navigation and search posibility.
+
+YaRubyDoc Generator is a "RubyDoc":http://www.ruby-doc.org/downloads parser.
+
+h2. Feature List
+
+*	Dynamic search (JavaScript/AJAX).
+*	Hierarchic tree-view showing Classes and Methods.
+*	Code highlighted.
+*	Added keywords and Ruby Class Hierarchy.
+*	Russian first page.
+
+h2. How To Use
+
+* Download and extract "RubyDoc":http://www.ruby-doc.org/downloads archiv with documentation
+* run @convert_ruby_doc.rb path_to_RubyDoc trace@
+
+where:
+	- path_to_RubyDoc  - RubyDoc location
+	- trace            - if trace needed
+

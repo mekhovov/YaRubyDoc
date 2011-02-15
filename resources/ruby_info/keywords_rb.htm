@@ -1,0 +1,1786 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <TITLE>File: keywords.rb [RDoc Documentation]</TITLE>
+  
+  <META http-equiv="Content-Script-Type" content="text/javascript">
+  <LINK rel="stylesheet" href="./../rdoc-style.css" type="text/css" media="screen">
+  <SCRIPT type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }<\/style>" )
+
+  // ]]>
+  </SCRIPT><STYLE type="text/css">div.method-source-code { display: none }</STYLE>
+
+
+<STYLE type="text/css" style="display: none !important;">object[classid$=":D27CDB6E-AE6D-11cf-96B8-444553540000"],object[codebase*="swflash.cab"],object[data*=".swf"],embed[type="application/x-shockwave-flash"],embed[src*=".swf"],object[type="application/x-shockwave-flash"],object[src*=".swf"],object[codetype="application/x-shockwave-flash"],iframe[type="application/x-shockwave-flash"],object[classid$=":166B1BCA-3F9C-11CF-8075-444553540000"],object[codebase*="sw.cab"],object[data*=".dcr"],embed[type="application/x-director"],embed[src*=".dcr"],object[type="application/x-director"],object[src*=".dcr"],object[classid$=":15B782AF-55D8-11D1-B477-006097098764"],object[codebase*="awswaxf.cab"],object[data*=".aam"],embed[type="application/x-authorware-map"],embed[src*=".aam"],object[type="application/x-authorware-map"],object[src*=".aam"],object[classid*="32C73088-76AE-40F7-AC40-81F62CB2C1DA"],object[type="application/ag-plugin"],object[type="application/x-silverlight"],object[type="application/x-silverlight-2"],object[source*=".xaml"],object[sourceelement*="xaml"],embed[type="application/ag-plugin"],embed[source*=".xaml"]{display:none;}</STYLE><STYLE></STYLE><STYLE></STYLE>
+<script src="../js/src/prettify.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="../js/src/prettify.css"/>
+</head><body onload="prettyPrint()" >
+
+
+  <DIV id="fileHeader">
+    <H1>keywords.rb</H1>
+    <TABLE class="header-table">
+    <TBODY><TR class="top-aligned-row">
+      <TD><STRONG>Path:</STRONG></TD>
+      <TD>keywords.rb
+
+      </TD>
+    </TR>
+    <TR class="top-aligned-row">
+      <TD><STRONG>Last Update:</STRONG></TD>
+      <TD>Tue Jun 30 16:36:34 -0700 2009</TD>
+    </TR>
+    </TBODY></TABLE>
+  </DIV>
+  <!-- banner header -->
+
+  <DIV id="bodyContent">
+
+  <DIV id="contextContent">
+
+    <DIV id="description">
+      <P>
+RDoc-style documentation for Ruby keywords (1.9.1).
+</P>
+<P>
+David A. Black
+</P>
+<P>
+June 29, 2009
+</P>
+<P>
+Yes, I KNOW that they aren’t methods. I’ve just put them in
+that format to produce the familiar RDoc output. I’ve been focusing
+on the content.
+</P>
+<P>
+If anyone has a good idea for how to package and distribute it, let me
+know. I haven’t really thought it through.
+</P>
+<P>
+Also, if you spot any errors or significant omissions, let me know. Keep in
+mind that I’m documenting the keywords themselves, not the entities
+they represent. Thus there is not full coverage of, say, what a class is,
+or how exceptions work.
+</P>
+<P>
+Changes since first release:
+</P>
+<UL>
+<LI>Added <TT>__END__</TT> (thanks Sven Fuchs)
+
+</LI>
+<LI>Added ‘retry’ to retry example (thanks mathie)
+
+</LI>
+<LI>Corrected description of when ‘rescue’ can be used (thanks Matt
+Neuburg)
+
+</LI>
+<LI>Added <TT>else</TT> in rescue context (thanks Rob Biedenharn)
+
+</LI>
+</UL>
+
+    </DIV>
+
+   </DIV>
+
+
+    <DIV id="method-list">
+      <H3 class="section-bar">Methods</H3>
+
+      <DIV class="name-list">
+
+        <A href="#M000005">BEGIN</A>&nbsp;&nbsp;
+
+        <A href="#M000006">END</A>&nbsp;&nbsp;
+
+        <A href="#M000001">__ENCODING__</A>&nbsp;&nbsp;
+
+        <A href="#M000003">__END__</A>&nbsp;&nbsp;
+
+        <A href="#M000004">__FILE__</A>&nbsp;&nbsp;
+
+        <A href="#M000002">__LINE__</A>&nbsp;&nbsp;
+
+        <A href="#M000007">alias</A>&nbsp;&nbsp;
+
+        <A href="#M000008">and</A>&nbsp;&nbsp;
+
+        <A href="#M000009">begin</A>&nbsp;&nbsp;
+
+        <A href="#M000010">break</A>&nbsp;&nbsp;
+
+        <A href="#M000011">case</A>&nbsp;&nbsp;
+
+        <A href="#M000012">class</A>&nbsp;&nbsp;
+
+        <A href="#M000013">def</A>&nbsp;&nbsp;
+
+        <A href="#M000014">defined?</A>&nbsp;&nbsp;
+
+        <A href="#M000015">do</A>&nbsp;&nbsp;
+
+        <A href="#M000016">else</A>&nbsp;&nbsp;
+
+        <A href="#M000017">elsif</A>&nbsp;&nbsp;
+
+        <A href="#M000018">end</A>&nbsp;&nbsp;
+
+        <A href="#M000019">ensure</A>&nbsp;&nbsp;
+
+        <A href="#M000020">false</A>&nbsp;&nbsp;
+
+        <A href="#M000021">for</A>&nbsp;&nbsp;
+
+        <A href="#M000022">if</A>&nbsp;&nbsp;
+
+        <A href="#M000023">in</A>&nbsp;&nbsp;
+
+        <A href="#M000024">module</A>&nbsp;&nbsp;
+
+        <A href="#M000025">next</A>&nbsp;&nbsp;
+
+        <A href="#M000026">nil</A>&nbsp;&nbsp;
+
+        <A href="#M000027">not</A>&nbsp;&nbsp;
+
+        <A href="#M000028">or</A>&nbsp;&nbsp;
+
+        <A href="#M000029">redo</A>&nbsp;&nbsp;
+
+        <A href="#M000030">rescue</A>&nbsp;&nbsp;
+
+        <A href="#M000031">retry</A>&nbsp;&nbsp;
+
+        <A href="#M000032">return</A>&nbsp;&nbsp;
+
+        <A href="#M000033">self</A>&nbsp;&nbsp;
+
+        <A href="#M000034">super</A>&nbsp;&nbsp;
+
+        <A href="#M000035">then</A>&nbsp;&nbsp;
+
+        <A href="#M000036">true</A>&nbsp;&nbsp;
+
+        <A href="#M000037">undef</A>&nbsp;&nbsp;
+
+        <A href="#M000038">unless</A>&nbsp;&nbsp;
+
+        <A href="#M000039">until</A>&nbsp;&nbsp;
+
+        <A href="#M000040">when</A>&nbsp;&nbsp;
+
+        <A href="#M000041">while</A>&nbsp;&nbsp;
+
+        <A href="#M000042">yield</A>&nbsp;&nbsp;
+
+      </DIV>
+    </DIV>
+
+  </DIV>
+
+    <!-- if includes -->
+
+    <DIV id="section">
+
+
+
+
+    <!-- if method_list -->
+
+    <DIV id="methods">
+
+      <H3 class="section-bar">Public Instance methods</H3>
+
+
+      <DIV id="method-M000005" class="method-detail">
+        <A name="M000005"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">BEGIN</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Designates, via code block, code to be executed unconditionally before
+sequential execution of the program begins. Sometimes used to simulate
+forward references to methods.
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">   puts times_3(gets.to_i)
+
+   BEGIN {
+     def times_3(n)
+       n * 3
+     end
+   }
+</PRE>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000006" class="method-detail">
+        <A name="M000006"></A>
+
+        <DIV class="method-heading">
+          
+          <SPAN class="method-name">END</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Designates, via code block, code to be executed just prior to program
+termination.
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">   END { puts "Bye!" }
+</PRE>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000001" class="method-detail">
+        <A name="M000001"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">__ENCODING__</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+The current default encoding, as an <TT>Encoding</TT> instance.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000003" class="method-detail">
+        <A name="M000003"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">__END__</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Denotes the end of the regular source code section of a program file. Lines
+below <TT>__END__</TT> will not be executed. Those lines will be available
+via the special filehandle <TT>DATA</TT>. The following code will print out
+two stanzas of personal information. Note that <TT>__END__</TT> has to be
+flush left, and has to be the only thing on its line.
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  DATA.each do |line|
+    first, last, phone, email = line.split('|')
+   puts &lt;&lt;-EOM
+   First name: #{first}
+   Last name:  #{last}
+   Phone:      #{phone}
+   Email:      #{email}
+      EOM
+   end
+ __END__
+ David|Black|123-456-7890|dblack@...
+ Someone|Else|321-888-8888|someone@else
+</PRE>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000004" class="method-detail">
+        <A name="M000004"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">__FILE__</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+The name of the file currently being executed, including path relative to
+the directory where the application was started up (or the current
+directory, if it has been changed). The current file is, in some cases,
+different from the startup file for the running application, which is
+available in the global variable <TT>$0</TT>.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000002" class="method-detail">
+        <A name="M000002"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">__LINE__</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+The line number, in the current source file, of the current line.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000007" class="method-detail">
+        <A name="M000007"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">alias</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Creates an alias or duplicate method name for a given method. The original
+method continues to be accessible via the alias, even if it is overriden.
+Takes two method-name arguments (which can be represented by strings or
+symbols but can also be the bare names themselves).
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  class Person
+    def name=(name)
+      puts "Naming your person #{name}!"
+      @name = name
+    end
+
+    alias full_name= name=
+  end
+
+  p = Person.new
+  p.name = "David"        # Naming your person David!
+
+  class Person
+    def name=(name)
+      puts "Please use full_name="
+    end
+  end
+
+  p.full_name = "David"   # Please use fullname=
+</PRE>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000008" class="method-detail">
+        <A name="M000008"></A>
+
+        <DIV class="method-heading">
+
+           <SPAN class="method-name">and</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Boolean and operator. Differs from &amp;&amp; in that <TT>and</TT> has
+lower precedence. In this example:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  puts "Hello" and "Goodbye"
+</PRE>
+<P>
+the subexpression <TT>puts "Hello"</TT> is executed first, and
+returns <TT>nil</TT>. The whole expression thus reduces to:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  nil and "Goodbye"
+</PRE>
+<P>
+which reduces to <TT>nil</TT>. In this example, however:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  puts "Hello" &amp;&amp; "Goodbye"
+</PRE>
+<P>
+the expression <TT>"Hello" &amp;&amp; "Goodbye"</TT> is
+used as the argument to <TT>puts</TT>. This expression evaluates to
+“Goodbye”; therefore, the whole statement prints
+“Goodbye”.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000009" class="method-detail">
+        <A name="M000009"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">begin</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Together with <TT>end</TT>, delimits what is commonly called a
+“begin” block (to distinguish it from the Proc type of code
+block). A “begin” block allows the use of <TT>while</TT> and
+<TT>until</TT> in modifier position with multi-line statements:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  begin
+    i += 1
+    puts i
+  end until i == 10
+</PRE>
+<P>
+“Begin” blocks also serve to scope exception raising and rescue
+operations. See <TT>rescue</TT> for examples. A “begin” block
+can have an <TT>else</TT> clause, which serves no purpose (and generates a
+warning) unless there’s also a <TT>rescue</TT> clause, in which case
+the <TT>else</TT> clause is executed when no exception is raised.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000010" class="method-detail">
+        <A name="M000010"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">break</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Causes unconditional termination of a code block or <TT>while</TT> or
+<TT>until</TT> block, with control transfered to the line after the block.
+If given an argument, returns that argument as the value of the terminated
+block.
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  result = File.open("lines.txt") do |fh|
+    fh.each do |line|
+      break line if my_regex.match(line)
+    end
+    nil
+  end
+</PRE>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000011" class="method-detail">
+        <A name="M000011"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">case</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+The case statement operator. Case statements consist of an optional
+condition, which is in the position of an argument to <TT>case</TT>, and
+zero or more <TT>when</TT> clauses. The first <TT>when</TT> clause to match
+the condition (or to evaluate to Boolean truth, if the condition is null)
+“wins”, and its code stanza is executed. The value of the case
+statement is the value of the successful <TT>when</TT> clause, or
+<TT>nil</TT> if there is no such clause.
+</P>
+<P>
+A case statement can end with an <TT>else</TT> clause. Each <TT>when</TT>
+statement can have multiple candidate values, separated by commas.
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  case x
+  when 1,2,3
+    puts "1, 2, or 3"
+  when 10
+    puts "10"
+  else
+    puts "Some other number"
+  end
+</PRE>
+<P>
+Case equality (success by a <TT>when</TT> candidate) is determined by the
+case-equality or “threequal” operator, <TT>===</TT>. The above
+example is equivalent to:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  if 1 === x or 2 === x or 3 === x
+    puts "1, 2, or 3"
+  elsif 10 === x
+    puts "10"
+  else
+    puts "Some other number"
+  end
+</PRE>
+<P>
+<TT>===</TT> is typically overriden by classes to reflect meaningful
+case-statement behavior; for example, <TT>/abc/ === "string"</TT>
+checks for a pattern match from the string.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000012" class="method-detail">
+        <A name="M000012"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">class</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Opens a class definition block. Takes either a constant name or an
+expression of the form <TT>&lt;&lt; object</TT>. In the latter case, opens
+a definition block for the singleton class of <TT>object</TT>.
+</P>
+<P>
+Classes may be opened more than once, and methods and constants added
+during those subsequent openings. <TT>class</TT> blocks have their own
+local scope; local variables in scope already are not visible inside the
+block, and variables created inside the block do not survive the block.
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">   class Person
+     def name=(name)
+       @name = name
+     end
+   end
+
+   david = Person.new
+   class &lt;&lt; david
+     def name=(name)
+       if name == "David"
+         @name = name
+       else
+         puts "Please don't name me other than David!"
+       end
+     end
+   end
+
+   david.name = "Joe" # Please don't name me other than David!"
+   joe = Person.new
+   joe.name = "Joe"
+</PRE>
+<P>
+Inside a <TT>class</TT> block, <TT>self</TT> is set to the class object
+whose block it is. Thus it’s possible to write class methods (i.e.,
+singleton methods on class objects) by referring to <TT>self</TT>:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  class Person
+    def self.species
+      "Homo sapiens"
+    end
+  end
+</PRE>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000013" class="method-detail">
+        <A name="M000013"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">def</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Paired with a terminating <TT>end</TT>, constitutes a method definition.
+Starts a new local scope; local variables in existence when the
+<TT>def</TT> block is entered are not in scope in the block, and local
+variables created in the block do not survive beyond the block.
+</P>
+<P>
+<TT>def</TT> can be used either with or without a specific object:
+</P>
+<UL>
+<LI>def method_name
+
+</LI>
+<LI>def object.singleton_method_name
+
+</LI>
+</UL>
+<P>
+The parameter list comes after the method name, and can (and usually is)
+wrapped in parentheses.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000014" class="method-detail">
+        <A name="M000014"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">defined?</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+<TT>defined? expression</TT> tests whether or not <TT>expression</TT>
+refers to anything recognizable (literal object, local variable that has
+been initialized, method name visible from the current scope, etc.). The
+return value is <TT>nil</TT> if the expression cannot be resolved.
+Otherwise, the return value provides information about the expression.
+</P>
+<P>
+Note that the expression is not executed.
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  p defined?(def x; end)   # "expression"
+  x                        # error: undefined method or variable
+
+  p defined?(@x=1)         # "assignment"
+  p @x                     # nil
+</PRE>
+<P>
+Assignment to a local variable will, however, have the usually result of
+initializing the variable to <TT>nil</TT> by virtue of the assignment
+expression itself:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  p defined?(x=1)          # assignment
+  p x                      # nil
+</PRE>
+<P>
+In most cases, the argument to <TT>defined?</TT> will be a single
+identifier:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  def x; end
+  p defined?(x)            # "method"
+</PRE>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000015" class="method-detail">
+        <A name="M000015"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">do</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Paired with <TT>end</TT>, can delimit a code block:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  array.each do |element|
+    puts element * 10
+  end
+</PRE>
+<P>
+In this context, <TT>do</TT>/<TT>end</TT> is equivalent to curly braces,
+except that curly braces have higher precedence. In this example:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  puts [1,2,3].map {|x| x * 10 }
+</PRE>
+<P>
+the code block binds to <TT>map</TT>; thus the output is:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  10
+  20
+  30
+</PRE>
+<P>
+In this version, however:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  puts [1,2,3].map do |x| x * 10 end
+</PRE>
+<P>
+the code is interpreted as <TT>puts([1,2,3].map) do |x| x * 10 end</TT>.
+Since <TT>puts</TT> doesn’t take a block, the block is ignored and
+the statement prints the value of the blockless <TT>[1,2,3].map</TT> (which
+returns an Enumerator).
+</P>
+<P>
+<TT>do</TT> can also (optionally) appear at the end of a
+<TT>for</TT>/<TT>in</TT> statement. (See <TT>for</TT> for an example.)
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000016" class="method-detail">
+        <A name="M000016"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">else</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+The <TT>else</TT> keyword denotes a final conditional branch. It appears in
+connection with <TT>if</TT>, <TT>unless</TT>, and <TT>case</TT>, and
+<TT>rescue</TT>. (In the case of <TT>rescue</TT>, the <TT>else</TT> branch
+is executed if no exception is raised.) The <TT>else</TT> clause is always
+the last branch in the entire statement, except in the case of
+<TT>rescue</TT> where it can be followed by an <TT>ensure</TT> clause.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000017" class="method-detail">
+        <A name="M000017"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">elsif</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Introduces a branch in a conditional (<TT>if</TT> or <TT>unless</TT>)
+statement. Such a statement can contain any number of <TT>elsif</TT>
+branches, including zero.
+</P>
+<P>
+See <TT>if</TT> for examples.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000018" class="method-detail">
+        <A name="M000018"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">end</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Marks the end of a <TT>while</TT>, <TT>until</TT>, <TT>begin</TT>,
+<TT>if</TT>, <TT>def</TT>, <TT>class</TT>, or other keyword-based,
+block-based construct.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000019" class="method-detail">
+        <A name="M000019"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">ensure</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Marks the final, optional clause of a <TT>begin</TT>/<TT>end</TT> block,
+generally in cases where the block also contains a <TT>rescue</TT> clause.
+The code in the <TT>ensure</TT> clause is guaranteed to be executed,
+whether control flows to the rescue block or not.
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  begin
+    1/0
+  rescue ZeroDivisionError
+    puts "Can't do that!"
+  ensure
+    puts "That was fun!"
+  end
+</PRE>
+<P>
+Output:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  Can't do that!
+ That was fun!
+</PRE>
+<P>
+If the statement <TT>1/0</TT> is changed to something harmless, like
+<TT>1/1</TT>, the <TT>rescue</TT> clause will not be executed but the
+<TT>ensure</TT> clause still will.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000020" class="method-detail">
+        <A name="M000020"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">false</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+<TT>false</TT> denotes a special object, the sole instance of
+<TT>FalseClass</TT>. <TT>false</TT> and <TT>nil</TT> are the only objects
+that evaluate to Boolean falsehood in Ruby (informally, that cause an
+<TT>if</TT> condition to fail.)
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000021" class="method-detail">
+        <A name="M000021"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">for</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+A loop constructor, used with <TT>in</TT>:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  for a in [1,2,3,4,5] do
+    puts a * 10
+  end
+</PRE>
+<P>
+<TT>for</TT> is generally considered less idiomatic than <TT>each</TT>;
+indeed, <TT>for</TT> calls <TT>each</TT>, and is thus essentially a wrapper
+around it.
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  obj = Object.new
+  def obj.each
+    yield 1; yield 2
+  end
+  for a in obj
+    puts a
+  end
+</PRE>
+<P>
+prints:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  1
+  2
+</PRE>
+<P>
+The <TT>do</TT> keyword may optionally appear at the end of the
+<TT>for</TT> expression:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  for a in array do
+    # etc.
+</PRE>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000022" class="method-detail">
+        <A name="M000022"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">if</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Ruby’s basic conditional statement constructor. <TT>if</TT> evaluates
+its argument and branches on the result. Additional branches can be added
+to an <TT>if</TT> statement with <TT>else</TT> and <TT>elsif</TT>.
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  if m.score &gt; n.score
+    puts "m wins!"
+  elsif n.score &gt; m.score
+    puts "n wins!"
+  else
+    puts "Tie!"
+  end
+</PRE>
+<P>
+An if statement can have more than one <TT>elsif</TT> clause (or none), but
+can only have one <TT>else</TT> clause (or none). The <TT>else</TT> clause
+must come at the end of the entire statement.
+</P>
+<P>
+<TT>if</TT> can also be used in modifier position:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  puts "You lose" if y.score &lt; 10
+</PRE>
+<P>
+<TT>then</TT> may optionally follow an <TT>if</TT> condition:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  if y.score.nil? then
+    puts "Have you even played the game?"
+  end
+</PRE>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000023" class="method-detail">
+        <A name="M000023"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">in</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+See <TT>for</TT>.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000024" class="method-detail">
+        <A name="M000024"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">module</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Opens a module definition block. Takes a constant (the name of the module)
+as its argument. The definition block starts a new local scope; existing
+variables are not visible inside the block, and local variables created in
+the block do not survive the end of the block.
+</P>
+<P>
+Inside the module definition, <TT>self</TT> is set to the module object
+itself.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000025" class="method-detail">
+        <A name="M000025"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">next</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Bumps an iterator, or a <TT>while</TT> or <TT>until</TT> block,to the next
+iteration, unconditionally and without executing whatever may remain of the
+block.
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  [0,1,2,3,4].each do |n|
+    next unless n &gt; 2
+    puts "Big number: #{n}"
+  end
+</PRE>
+<P>
+Output:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  Big number: 3
+  Big number: 4
+</PRE>
+<P>
+<TT>next</TT> is typically used in cases like iterating through a list of
+files and taking action (or not) depending on the filename.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000026" class="method-detail">
+        <A name="M000026"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">nil</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+A special “non-object”. <TT>nil</TT> is, in fact, an object
+(the sole instance of <TT>NilClass</TT>), but connotes absence and
+indeterminacy. <TT>nil</TT> and <TT>false</TT> are the only two objects in
+Ruby that have Boolean falsehood (informally, that cause an <TT>if</TT>
+condition to fail).
+</P>
+<P>
+<TT>nil</TT> serves as the default value for uninitialized array elements
+and hash values (unless the default is overridden).
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000027" class="method-detail">
+        <A name="M000027"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">not</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Boolean negation.
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  not true    # false
+  not 10      # false
+  not false   # true
+</PRE>
+<P>
+Similar in effect to the negating bang (<TT>!</TT>), but has lower
+precedence:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  not 3 == 4  # true; interpreted as not (3 == 4)
+  !3 == 4     # false; interpreted as (!3) == 4, i.e., false == 4
+</PRE>
+<P>
+(The unary <TT>!</TT> also differs in that it can be overridden.)
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000028" class="method-detail">
+        <A name="M000028"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">or</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Boolean or. Differs from <TT>||</TT> in that <TT>or</TT> has lower
+precedence. This code:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  puts "Hi" or "Bye"
+</PRE>
+<P>
+is interpreted as <TT>(puts "Hi") or "Bye"</TT>. Since
+<TT>puts "Hi"</TT> reduces to <TT>nil</TT>, the whole expression
+reduces to <TT>nil or "Bye"</TT> which evaluates to
+<TT>"Bye"</TT>. (The side-effect printing of “Hi”
+does take place.)
+</P>
+<P>
+This code, however:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  puts "Hi" || "Bye"
+</PRE>
+<P>
+is interpreted as <TT>puts("Hi" || "Bye")</TT>, which
+reduces to <TT>puts "Hi"</TT> (since <TT>"Hi" ||
+"Bye"</TT> evaluates to <TT>"Hi"</TT>).
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000029" class="method-detail">
+        <A name="M000029"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">redo</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Causes unconditional re-execution of a code block, with the same parameter
+bindings as the current execution.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000030" class="method-detail">
+        <A name="M000030"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">rescue</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Designates an exception-handling clause. Can occur either inside a
+<TT>begin&lt;code&gt;/&lt;code&gt;end</TT> block, inside a method
+definition (which implies <TT>begin</TT>), or in modifier position (at the
+end of a statement).
+</P>
+<P>
+By default, <TT>rescue</TT> only intercepts <TT>StandardError</TT> and its
+descendants, but you can specify which exceptions you want handled, as
+arguments. (This technique does not work when <TT>rescue</TT> is in
+statement-modifier position.) Moreover, you can have more than one
+<TT>rescue</TT> clause, allowing for fine-grained handling of different
+exceptions.
+</P>
+<P>
+In a method (note that <TT>raise</TT> with no argument, in a rescue clause,
+re-raises the exception that’s being handled):
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  def file_reverser(file)
+    File.open(file) {|fh| puts fh.readlines.reverse }
+  rescue Errno::ENOENT
+    log "Tried to open non-existent file #{file}"
+    raise
+  end
+</PRE>
+<P>
+In a <TT>begin</TT>/<TT>end</TT> block:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  begin
+    1/0
+  rescue ZeroDivisionError
+    puts "No way"
+  end
+</PRE>
+<P>
+In statement-modifier position:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  while true
+    1/0
+  end rescue nil
+
+  david = Person.find(n) rescue Person.new
+</PRE>
+<P>
+<TT>rescue</TT> (except in statement-modifier position) also takes a
+special argument in the following form:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  rescue =&gt; e
+</PRE>
+<P>
+which will assign the given local variable to the exception object, which
+can then be examined inside the <TT>rescue</TT> clause.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000031" class="method-detail">
+        <A name="M000031"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">retry</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Inside a <TT>rescue</TT> clause, <TT>retry</TT> causes Ruby to return to
+the top of the enclosing code (the <TT>begin</TT> keyword, or top of method
+or block) and try executing the code again.
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  a = 0
+  begin
+    1/a
+  rescue ZeroDivisionError =&gt; e
+    puts e.message
+    puts "Let's try that again..."
+    a = 1
+    retry
+  end
+  puts "That's better!"
+</PRE>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000032" class="method-detail">
+        <A name="M000032"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">return</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Inside a method definition, executes the <TT>ensure</TT> clause, if
+present, and then returns control to the context of the method call. Takes
+an optional argument (defaulting to nil), which serves as the return value
+of the method. Multiple values in argument position will be returned in an
+array.
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  def three
+    return 3
+  ensure
+    puts "Enjoy the 3!"
+  end
+
+  a = 3    # Enjoy the 3!
+  puts a   # 3
+</PRE>
+<P>
+Inside a code block, the behavior of <TT>return</TT> depends on whether or
+not the block constitutes the body of a regular Proc object or a
+lambda-style Proc object. In the case of a lambda, <TT>return</TT> causes
+execution of the block to terminate. In the case of a regular Proc,
+<TT>return</TT> attempts to return from the enclosing method. If there is
+no enclosing method, it’s an error.
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  ruby -e 'Proc.new {return}.call'
+    =&gt; -e:1:in `block in &lt;main&gt;': unexpected return (LocalJumpError)
+
+  ruby19 -e 'p lambda {return 3}.call'
+    =&gt; 3
+</PRE>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000033" class="method-detail">
+        <A name="M000033"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">self</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+<TT>self</TT> is the “current object” and the default receiver
+of messages (method calls) for which no explicit receiver is specified.
+Which object plays the role of <TT>self</TT> depends on the context.
+</P>
+<UL>
+<LI>In a method, the object on which the method was called is <TT>self</TT>
+
+</LI>
+<LI>In a class or module definition (but outside of any method definition
+contained therein), <TT>self</TT> is the class or module object being
+defined.
+
+</LI>
+<LI>In a code block associated with a call to <TT>class_eval</TT> (aka
+<TT>module_eval</TT>), <TT>self</TT> is the class (or module) on which the
+method was called.
+
+</LI>
+<LI>In a block associated with a call to <TT>instance_eval</TT> or
+<TT>instance_exec</TT>, <TT>self</TT> is the object on which the method was
+called.
+
+</LI>
+</UL>
+<P>
+<TT>self</TT> automatically receives message that don’t have an
+explicit receiver:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  class String
+    def upcase_and_reverse
+      upcase.reverse
+    end
+  end
+</PRE>
+<P>
+In this method definition, the message <TT>upcase</TT> goes to
+<TT>self</TT>, which is whatever string calls the method.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000034" class="method-detail">
+        <A name="M000034"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">super</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Called from a method, searches along the method lookup path (the classes
+and modules available to the current object) for the next method of the
+same name as the one being executed. Such method, if present, may be
+defined in the superclass of the object’s class, but may also be
+defined in the superclass’s superclass or any class on the upward
+path, as well as any module mixed in to any of those classes.
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  module Vehicular
+    def move_forward(n)
+      @position += n
+    end
+  end
+
+  class Vehicle
+    include Vehicular  # Adds Vehicular to the lookup path
+  end
+
+  class Car &lt; Vehicle
+    def move_forward(n)
+      puts "Vrooom!"
+      super            # Calls Vehicular#move_forward
+    end
+  end
+</PRE>
+<P>
+Called with no arguments and no empty argument list, <TT>super</TT> calls
+the appropriate method with the same arguments, and the same code block, as
+those used to call the current method. Called with an argument list or
+arguments, it calls the appropriate methods with exactly the specified
+arguments (including none, in the case of an empty argument list indicated
+by empty parentheses).
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000035" class="method-detail">
+        <A name="M000035"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">then</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Optional component of conditional statements (<TT>if</TT>, <TT>unless</TT>,
+<TT>when</TT>). Never mandatory, but allows for one-line conditionals
+without semi-colons. The following two statements are equivalent:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  if a &gt; b; puts "a wins!" end
+  if a &gt; b then puts "a wins!" end
+</PRE>
+<P>
+See <TT>if</TT> for more examples.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000036" class="method-detail">
+        <A name="M000036"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">true</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+The sole instance of the special class TrueClass. <TT>true</TT>
+encapsulates Boolean truth; however, <EMPH>all</EMPH> objects in Ruby are
+true in the Boolean sense (informally, they cause an <TT>if</TT> test to
+succeed), with the exceptions of <TT>false</TT> and <TT>nil</TT>.
+</P>
+<P>
+Because Ruby regards most objects (and therefore most expressions) as
+“true”, it is not always necessary to return <TT>true</TT> from
+a method to force a condition to succeed. However, it’s good practice
+to do so, as it makes the intention clear.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000037" class="method-detail">
+        <A name="M000037"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">undef</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Undefines a given method, for the class or module in which it’s
+called. If the method is defined higher up in the lookup path (such as by a
+superclass), it can still be called by instances classes higher up.
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  class C
+    def m
+      "Hi"
+    end
+  end
+  class D &lt; C
+  end
+  class E &lt; D
+  end
+
+  class D
+    undef m
+  end
+
+  C.new.m   # Hi
+  D.new.m   # error
+  E.new.m   # error
+</PRE>
+<P>
+Note that the argument to <TT>undef</TT> is a method name, not a symbol or
+string.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000038" class="method-detail">
+        <A name="M000038"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">unless</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+The negative equivalent of <TT>if</TT>.
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  unless y.score &gt; 10
+    puts "Sorry; you needed 10 points to win."
+  end
+</PRE>
+<P>
+See <TT>if</TT>.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000039" class="method-detail">
+        <A name="M000039"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">until</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+The inverse of <TT>while</TT>: executes code until a given condition is
+true, i.e., while it is not true. The semantics are the same as those of
+<TT>while</TT>; see <TT>while</TT>.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000040" class="method-detail">
+        <A name="M000040"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">when</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+See <TT>case</TT>.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000041" class="method-detail">
+        <A name="M000041"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">while</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+<TT>while</TT> takes a condition argument, and executes the code that
+follows (up to a matching <TT>end</TT> delimiter) while the condition is
+true.
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  i = 0
+  while i &lt; 10
+    i += 1
+  end
+</PRE>
+<P>
+The value of the whole <TT>while</TT> statement is the value of the last
+expression evaluated the last time through the code. If the code is not
+executed (because the condition is false at the beginning of the
+operation), the <TT>while</TT> statement evaluates to <TT>nil</TT>.
+</P>
+<P>
+<TT>while</TT> can also appear in modifier position, either in a
+single-line statement or in a multi-line statement using a
+<TT>begin</TT>/<TT>end</TT> block. In the one-line case:
+</P>
+<P>
+i = 0 i += 1 while i &lt; 10
+</P>
+<P>
+the leading code is not executed at all if the condition is false at the
+start. However, in the “begin”-block case:
+</P>
+<pre class="prettyprint rb-java" id="rb_lang" style="border-style: none">  i = 0
+  begin
+    i += 1
+    puts i
+  end while i &lt; 10
+</PRE>
+<P>
+the block will be executed at least once, before the condition is tested
+the first time.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+      <DIV id="method-M000042" class="method-detail">
+        <A name="M000042"></A>
+
+        <DIV class="method-heading">
+
+          <SPAN class="method-name">yield</SPAN><SPAN class="method-args"></SPAN>
+
+          </A>
+
+        </DIV>
+
+        <DIV class="method-description">
+
+          <P>
+Called from inside a method body, yields control to the code block (if any)
+supplied as part of the method call. If no code block has been supplied,
+calling <TT>yield</TT> raises an exception.
+</P>
+<P>
+<TT>yield</TT> can take an argument; any values thus yielded are bound to
+the block’s parameters. The value of a call to <TT>yield</TT> is the
+value of the executed code block.
+</P>
+
+        </DIV>
+      </DIV>
+
+
+
+    </DIV>
+
+
+
+
+  </DIV>
+
+<DIV id="validator-badges">
+  <P><SMALL><A href="http://validator.w3.org/check/referer">[Validate]</A></SMALL></P>
+</DIV>
+
+
+
+<DIV id="divCleekiAttrib" style="display: none; " Expanded="0" ActiveID="-1" MenuLeft="0" MenuTop="0" MenuRight="0" MenuBottom="0"></DIV></BODY></HTML>
